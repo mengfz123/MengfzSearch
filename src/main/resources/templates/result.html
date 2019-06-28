@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://ifkdy.com/?q=%E5%BF%83%E7%81%B5%E6%8D%95%E6%89%8B&p=1 -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="梦方舟搜索">
+    <meta name="description" content="梦方舟搜索">
+    <title>梦方舟搜索-最好的IT资源搜素平台</title>
+    <script>
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            var iScale = 1;
+            iScale = iScale / window.devicePixelRatio;
+            document.write('<meta name="viewport" content="width=device-width,initial-scale=' + iScale + ',minimum-scale=' + iScale + ',maximum-scale=' + iScale + ',user-scalable=no" />')
+            var iWidth = document.documentElement.clientWidth;
+            document.getElementsByTagName('html')[0].style.fontSize = iWidth / 15 + 'px';
+            document.write('<link rel="stylesheet" type="text/css" href="css/m_result.css?v=247144" >')
+        } else {
+            document.write('<link rel="stylesheet" type="text/css" href="css/result.css?v=247144" />')
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/result.css">
+</head>
+<body style="height: 920px;">
+<div class="top-bar">
+    <a class="search-logo" href=""></a>
+    <div id="search-container">
+        <div class="search-bar clearfix">
+            <input type="text" name="search-input" id="search-input" value="" placeholder="输入资源关键词">
+            <span id="search-btn"></span>
+        </div>
+        <div class="suggesst-words" style="display: none;">
+            <ul></ul>
+        </div>
+    </div>
+    <ul class="bar-right">
+        <li>
+            <a href="" target="_blank"></a>
+        </li>
+        <li>
+            <a href="" target="_blank"></a>
+        </li>
+    </ul>
+</div>
+
+<div class="search-result">
+        <div class="result-detail">
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+    </a>
+</div>
+
+
+<div class="footer">
+    <p class="copy-right">©2019，本站不提供任何资源存储服务，只提供查询服务</p>
+</div>
+
+<script>
+    window.onload = function (e) {
+        var _body = document.getElementsByTagName('body')[0];
+        _body.style.height = _body.clientHeight + "px";
+    }
+</script>
+<script>
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
+    }
+
+</script>
+
+</body>
+</html>

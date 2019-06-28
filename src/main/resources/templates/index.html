@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--[if lte IE 9]><script>window.location.href='update.html';</script><![endif]-->
+		
+        <meta name="keywords" content="梦方舟搜索">
+        <meta name="description" content="梦方舟搜索">
+		<title>梦方舟搜索-最好的IT资源搜素平台</title>
+		<link rel="stylesheet" type="text/css" href="../css/wawa.css">
+		<script>
+			var sUserAgent = navigator.userAgent.toLowerCase();
+			var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+			var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+			var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+			var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+			var bIsAndroid = sUserAgent.match(/android/i) == "android";
+			var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+			var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+			if(bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+				document.write('<link rel="stylesheet" type="text/css" href="css/m_wawa.css?v=23558461" >')
+				var iScale = 1;
+				iScale = iScale / window.devicePixelRatio;
+				document.write('<meta name="viewport" content="width=device-width,initial-scale=' + iScale + ',minimum-scale=' + iScale + ',maximum-scale=' + iScale + ',user-scalable=no" />')
+				var iWidth = document.documentElement.clientWidth;
+				document.getElementsByTagName('html')[0].style.fontSize = iWidth / 15 + 'px';
+			} else {
+				document.write('<link rel="stylesheet" type="text/css" href="../css/wawa.css?v=23558461"/>')
+			}
+		</script>
+		
+	</head>
+	<body style="height: 0px;">
+		<div id="search-container">
+			<a class="search-logo" href=""></a>
+
+			<div class="search-bar clearfix">
+				<input type="text" name="search-input" v-model="searchInput" id="search-input" placeholder="输入资源关键词" autofocus="autofocus">
+				<span id="search-btn" @click="search" ></span>
+			</div>
+			<div class="suggesst-words" style="display: none;">
+				<ul>
+				</ul>
+			</div>
+			<div class="search-hot clearfix">
+				<ul class="clearfix">
+					<li v-for="item in searchList">
+						<a href="/search?keyword=item.keyword">{{item.keyword}}</a>
+					</li>
+
+                </ul>
+			</div>
+			</div>
+		
+        <div class="top-bar">
+			<ul>
+				<li>
+					<a href="" target="_blank" style="color: red;"></a>
+				</li>
+				<li>
+					<a href="" target="_blank"></a>
+				</li>
+			</ul>
+		</div>
+        
+		<div class="footer">
+
+			<p class="copy-right">©2019，本站不提供任何资源存储服务，只提供查询服务</p>
+		</div>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/suggest.js"></script>
+		<script src="../js/index.js"></script>
+		<script>
+			window.onload=function(e){
+			    var _body=document.getElementsByTagName('body')[0];
+			    _body.style.height=_body.clientHeight+"px";
+			}
+		</script>
+		<script>
+		function IsPC(){  
+	     var userAgentInfo = navigator.userAgent;
+	     var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+	     var flag = true;  
+	     for (var v = 0; v < Agents.length; v++) {  
+	         if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+	     }  
+	     return flag;  
+	  }
+
+		</script>
+
+		<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+
+	</body></html>
